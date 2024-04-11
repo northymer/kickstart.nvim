@@ -8,6 +8,7 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagn
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 -- Git-related mappings
 vim.keymap.set('n', '<leader>gg', ':LazyGit<cr>', { desc = 'Open Lazy[G]it' })
+vim.keymap.set('n', '<leader>gb', ':Gitsigns blame_line<cr>', { desc = '[G]it [B]lameline' })
 -- Project-related mappings
 vim.keymap.set('n', '<leader>ps', ':Neotree toggle<cr>', { desc = 'Project [S]tructure' })
 
