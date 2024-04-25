@@ -12,6 +12,7 @@ vim.keymap.set('n', '<leader>gb', ':Gitsigns blame_line<cr>', { desc = '[G]it [B
 -- Project-related mappings
 vim.keymap.set('n', '<leader>ps', ':Neotree toggle<cr>', { desc = 'Project [S]tructure' })
 
+vim.keymap.set('n', '<leader>cc', ':Gitsigns blame_line<cr>', { desc = '[C]omment [C]ode' })
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
@@ -34,3 +35,7 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+-- Buffer keybinds
+
+vim.keymap.set('n', '<leader>bk', ':bd<cr>', { desc = '[K]ill buffer' })
