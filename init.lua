@@ -418,12 +418,6 @@ require('lazy').setup({
           --  For example, in C this would take you to the header.
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
-          vim.lsp.buf.format {
-            filter = function(client)
-              return client.name ~= 'tsserver'
-            end,
-          }
-
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
           --    See `:help CursorHold` for information about when this is executed
@@ -471,14 +465,6 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = {
-          settings = {
-            completion = {
-              enable = false,
-            },
-          },
-        },
-        --
 
         lua_ls = {
           -- cmd = {...},
