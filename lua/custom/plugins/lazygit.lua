@@ -1,3 +1,4 @@
+-- Very comfy action window for git actions
 return {
   'kdheepak/lazygit.nvim',
   cmd = {

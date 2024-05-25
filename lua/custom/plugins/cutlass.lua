@@ -1,3 +1,4 @@
+-- Add-on for replacing annoying "cut instead of delete" behaviours
 return {
   'gbprod/cutlass.nvim',
   opts = {
