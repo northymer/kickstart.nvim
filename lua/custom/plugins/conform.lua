@@ -1,6 +1,13 @@
 return { -- Autoformat
   'stevearc/conform.nvim',
   opts = {
+    formatters = {
+      prettierd = {
+        env = {
+          PRETTIERD_LOCAL_PRETTIER_ONLY = 'true',
+        },
+      },
+    },
     notify_on_error = false,
     format_on_save = function(bufnr)
       -- Disable "format_on_save lsp_fallback" for languages that don't
@@ -19,10 +26,15 @@ return { -- Autoformat
       --
       -- You can use a sub-list to tell conform to run *until* a formatter
       -- is found.
-      typescript = {},
+      -- typescript = {},
+      -- typescriptreact = {},
+      -- javascript = {},
+      -- javascriptreact = {},
+      typescript = { { 'prettierd', 'prettier' } },
       typescriptreact = { { 'prettierd', 'prettier' } },
       javascript = { { 'prettierd', 'prettier' } },
       javascriptreact = { { 'prettierd', 'prettier' } },
+      css = { { 'stylelint' } },
     },
   },
 }
