@@ -194,7 +194,6 @@ require('lazy').setup({
       require('which-key').setup()
 
       -- Document existing key chains
-      --
       require('which-key').add {
         { '<leader>b', group = '[B]uffer' },
         { '<leader>b_', hidden = true },
