@@ -11,7 +11,7 @@ return { -- Autoformat
     notify_on_error = false,
     format_on_save = {
       lsp_format = 'fallback',
-      timeout_ms = 1500,
+      timeout_ms = 3000,
     },
     formatters_by_ft = {
       lua = { 'stylua' },
